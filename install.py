@@ -16,5 +16,11 @@ for symlink in symlinks:
     src = os.path.join(dotfiles, symlink)
     dst = os.path.join(home, symlinks[symlink])
     print(src + " -> " + dst)
+    if (os.path.islink(dst)):
+        print("Already a symlink, ignoring...")
+        continue
+    if (os.path.isfile(dst)):
+        print("Is a file, ignoring...")
+        continue
     os.symlink(src, dst)
 
