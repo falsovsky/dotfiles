@@ -1,3 +1,4 @@
 {
-  "tmux/tmux.conf": ".tmux.config"
+  "tmux/tmux.conf": ".tmux.config",
+  "git/gitconfig": ".gitconfig"
 }
