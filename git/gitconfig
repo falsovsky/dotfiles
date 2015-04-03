@@ -1,3 +1,5 @@
 [user]
 	name = Pedro de Oliveira
 	email = falsovsky@gmail.com
+[push]
+	default = simple
